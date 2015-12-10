@@ -28,13 +28,16 @@ int jeu_etre_integre(const jeu_siam* jeu)
 
 void jeu_initialiser(jeu_siam* jeu)
 {
-
+    plateau_initialiser(&jeu->plateau);
     assert(jeu!=NULL);
-
+    jeu->plateau.piece[1][1].type=elephant;
+    jeu->plateau.piece[1][1].orientation=haut;
+    jeu->plateau.piece[0][4].type=rhinoceros;
+    jeu->plateau.piece[0][4].orientation=bas;
     //initialise le plateau
     //initialise le joueur
 
-    plateau_initialiser(&jeu->plateau);
+
     jeu->joueur=0;
 }
 
