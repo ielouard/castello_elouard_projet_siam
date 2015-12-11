@@ -15,7 +15,7 @@ int poussee_etre_valide(plateau_siam* plateau ,int x, int y, orientation_deplace
     return 1;
 }
 
-viod poussee_realiser(plateau_siam* plateau ,
+void poussee_realiser(plateau_siam* plateau ,
                       int x, int y,
                       type_piece type,
                       orientation_deplacement orientation,
