@@ -189,7 +189,8 @@ void test_lancer()
 
 int main()
 {
-    //mode_interactif_lancer();
-    test_lancer();
+
+    mode_interactif_lancer();
+    //test_lancer();
     return 0;
 }
